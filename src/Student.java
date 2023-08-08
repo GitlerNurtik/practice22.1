@@ -3,6 +3,15 @@ public class Student {
     private String name;
     private String lastName;
     private int age;
+    private Course course;
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
 
     public int getId() {
         return id;
@@ -46,10 +55,11 @@ public class Student {
                 '}';
     }
 
-    Student(int id, String name, String lastName, int age) {
+    Student(int id, String name, String lastName, int age, Course course) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.age = age;
+        this.course = course;
     }
 }
