@@ -1,6 +1,21 @@
 public class School {
     private int id;
     private String name;
+    private lesson lesson;
+
+    public lesson getLesson() {
+        return lesson;
+    }
+
+    public void setLesson(lesson lesson) {
+        this.lesson = lesson;
+    }
+
+    public School(int id, String name, lesson lesson) {
+        this.id = id;
+        this.name = name;
+        this.lesson = lesson;
+    }
 
     public int getId() {
         return id;
